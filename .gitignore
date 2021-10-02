@@ -1,4 +1,6 @@
-dist
 node_modules
 .idea
 **/bundle.js
+dist/main.js
+dist/main.js.LICENSE.txt
+dist/main.js.map

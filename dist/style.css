@@ -4,7 +4,7 @@ html {
   padding: 0;
   font-family: sans-serif;
   height: 100%;
-  background-color: #222;
+  background-color: rgba(34,34,34,0.95);
 }
 
 div.main {
@@ -43,7 +43,7 @@ button:hover {
 }
 
 #chart {
-  opacity: 0.3;
+  opacity: 0.6;
   position: absolute;
   top: 0;
   bottom: 0;
@@ -78,18 +78,42 @@ button:hover {
 }
 
 #heartrate {
-  font-size: 30vw;
-  color: #f1f1f1;
+  font-size: 24vw;
+  /* color: #f1f1f1; */
   margin: 0;
   text-align: center;
   font-weight: bold;
 }
 
 #heartrate .unit {
-  font-size: 5vw;
-  color: #c1c1c1;
+  font-size: 8vw;
+  /* color: #c1c1c1; */
 }
 
 .d-none {
   display: none;
+}
+
+.accuracy-0 {
+  color: darkred;
+} 
+
+.accuracy-1 {
+  color: pink;
+}
+
+.accuracy-2 {
+  color: yellow;
+}
+
+.accuracy-3 {
+  color: lightgreen;
+}
+
+#heart {
+  color: red;
+}
+
+.heart-toggled {
+  color: darkred !important;
 }

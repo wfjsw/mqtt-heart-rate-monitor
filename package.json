@@ -1,19 +1,20 @@
 {
-  "name": "miband5-web",
+  "name": "mqtt-web",
   "author": "Jaap Heijligers",
   "version": "1.0.0",
   "scripts": {
-    "watch": "esbuild --bundle src/index.js --outfile=src/bundle.js",
-    "build": "rm -r dist/*; esbuild --bundle src/index.js --outfile=dist/bundle.js && cp src/index.html src/style.css src/aes.js dist/",
-    "serve": "npm run watch & cd src; npx http-server",
-    "serve:dist": "npm run build && cd dist; npx http-server",
-    "lint": "prettier --write src/"
+    "build": "webpack --mode production",
   },
   "dependencies": {
-    "esbuild": "^0.8.43"
+    "buffer": "^6.0.3",
+    "mqtt": "^4.2.8",
+    "process": "^0.11.10",
+    "url": "^0.11.0"
   },
   "devDependencies": {
     "apexcharts": "^3.24.0",
-    "prettier": "^2.2.1"
+    "prettier": "^2.2.1",
+    "webpack": "^5.56.0",
+    "webpack-cli": "^4.8.0"
   }
 }
